@@ -48,4 +48,14 @@ Triangle triangle;
   public void typeOfTriangle_sideThreeSideOneEqual_isosceles() {
     assertEquals("It's an isosceles!", triangle.typeOfTriangle(10, 15, 10));
   }
+
+  @Test
+  public void typeOfTriangle_noSidesAreEqual_scalene() {
+    assertEquals("It's a scalene!", triangle.typeOfTriangle(10, 15, 11));
+  }
+
+  @Test
+  public void Triangle_SideOne10SideTwo10SideThree10_TriangleObject() {
+    assertEquals(Triangle, new Triangle(10, 10, 10));
+  }
 }

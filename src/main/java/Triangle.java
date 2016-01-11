@@ -4,9 +4,14 @@ public class Triangle {
   private int mSideThree;
   private boolean mIsTriangle;
 
+  public Triangle(int sideOne, int sideTwo, int sideThree) {
+      mSideOne = sideOne;
+      mSideTwo = sideTwo;
+      mSideThree = sideThree;
+  }
 
-  public boolean isATriangle(int sideOne, int sideTwo, int sideThree){
-    if ((sideOne + sideTwo < sideThree) || (sideTwo + sideThree < sideOne) || (sideThree + sideOne < sideTwo)){
+  public boolean isATriangle(){
+    if ((mSideOne + mSideTwo < mSideThree) || (mSideTwo + mSideThree < mSideOne) || (mSideThree + mSideOne < mSideTwo)){
       mIsTriangle = false;
     }
     else {
@@ -15,13 +20,13 @@ public class Triangle {
     return mIsTriangle;
   }
 
-  public String typeOfTriangle(int sideOne, int sideTwo, int sideThree){
-    if ((sideOne==sideTwo) && (sideTwo==sideThree)) {
+  public String typeOfTriangle(){
+    if ((mSideOne==mSideTwo) && (mSideTwo==mSideThree)) {
       return "It's an equilateral!";
-    } else if ((sideOne==sideTwo) || (sideTwo==sideThree) || (sideThree==sideOne)){
+    } else if ((mSideOne==mSideTwo) || (mSideTwo==mSideThree) || (mSideThree==mSideOne)){
       return "It's an isosceles!";
     } else {
-      return "It's a scalene";
+      return "It's a scalene!";
     }
   }
 
