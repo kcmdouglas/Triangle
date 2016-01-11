@@ -3,11 +3,11 @@
 <form action='/results'>
   <div class="form-group">
     <label for="sideOneInput"> Dimensions of side one: </label>
-    <input id="sideOneInput" name="sideOneInput" class="form-control" type="number" required>
+    <input id="sideOneInput" name="sideOneInput" class="form-control" type="number" min="1" required>
     <label for="sideTwoInput"> Dimensions of side two: </label>
-    <input id="sideTwoInput" name="sideTwoInput" class="form-control" type="number" required>
+    <input id="sideTwoInput" name="sideTwoInput" class="form-control" type="number" min="1" required>
     <label for="sideThreeInput"> Dimensions of side three: </label>
-    <input id="sideThreeInput" name="sideThreeInput" class="form-control" type="number" required>
+    <input id="sideThreeInput" name="sideThreeInput" class="form-control" type="number" min="1" required>
   </div>
   <button type="submit" class="btn btn-info">Go!</button>
 </form>
