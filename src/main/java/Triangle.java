@@ -6,7 +6,7 @@ public class Triangle {
 
 
   public boolean isATriangle(int sideOne, int sideTwo, int sideThree){
-    if ((sideOne + sideTwo > sideThree) || (sideTwo + sideThree > sideOne) || (sideThree + sideOne > sideTwo)){
+    if ((sideOne + sideTwo < sideThree) || (sideTwo + sideThree < sideOne) || (sideThree + sideOne < sideTwo)){
       mIsTriangle = false;
     }
     else {
@@ -15,6 +15,14 @@ public class Triangle {
     return mIsTriangle;
   }
 
-
+  public String typeOfTriangle(int sideOne, int sideTwo, int sideThree){
+    if ((sideOne==sideTwo) && (sideTwo==sideThree)) {
+      return "It's an equilateral!";
+    } else if ((sideOne==sideTwo) || (sideTwo==sideThree) || (sideThree==sideOne)){
+      return "It's an isosceles!";
+    } else {
+      return "It's a scalene";
+    }
+  }
 
 }
