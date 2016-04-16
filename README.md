@@ -1,4 +1,4 @@
-#Java Code Review 1
+#Triangle
 
 #### Determine whether the dimentions you give make a triangle! January 11, 2016.
 
